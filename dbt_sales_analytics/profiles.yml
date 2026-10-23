@@ -1,0 +1,12 @@
+dbt_sales_analytics: # <-- Имя профиля должно совпадать с profile в dbt_project.yml
+  target: dev
+  outputs:
+    dev:
+      type: clickhouse
+      schema: default
+      host: ip6vy6iewk.germanywestcentral.azure.clickhouse.cloud
+      port: 8443
+      user: default
+      password: nZ86SdKJ4nE.1
+      secure: True
+      verify: True

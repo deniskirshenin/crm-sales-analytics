@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: default
+    database: default
+    tables:
+      - name: sales_pipeline
+        description: "This table contains information about the sales pipeline, including details about leads, opportunities, and their respective stages. It is used to track the progress of potential sales and forecast future revenue."

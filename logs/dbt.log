@@ -1,0 +1,95 @@
+[0m15:24:50.683367 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106595d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e46710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e46990>]}
+
+
+============================== 15:24:50.692606 | 04fb19f9-d11c-45e5-940a-25b0d6396275 ==============================
+[0m15:24:50.692606 [info ] [MainThread]: Running with dbt=1.12.6
+[0m15:24:50.693583 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt init dbt-sales-analytics', 'target_path': 'None', 'use_colors': 'True', 'empty': 'None', 'no_print': 'None', 'cache_selected_only': 'False', 'introspect': 'True', 'quiet': 'False', 'hints_enabled': 'True', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'debug': 'False', 'write_json': 'True', 'log_path': 'logs', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'fail_fast': 'False', 'warn_error': 'None', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'static_parser': 'True', 'profiles_dir': '/Users/fish/.dbt'}
+[0m15:25:12.100783 [debug] [MainThread]: Starter project path: /Users/fish/crm-sales-analytics/venv/lib/python3.14/site-packages/dbt/include/starter_project
+[0m15:25:12.123841 [info ] [MainThread]: Setting up your profile.
+[0m15:25:17.010573 [info ] [MainThread]: No sample profile found for clickhouse.
+[0m15:25:17.013682 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m15:25:17.014922 [info ] [MainThread]: dbt version: 1.12.6
+[0m15:25:17.015544 [info ] [MainThread]: python version: 3.14.8
+[0m15:25:17.016043 [info ] [MainThread]: python path: /Users/fish/crm-sales-analytics/venv/bin/python3.14
+[0m15:25:17.016513 [info ] [MainThread]: os info: macOS-15.7.9-x86_64-i386-64bit-Mach-O
+[0m15:25:17.024010 [info ] [MainThread]: Using profiles dir at /Users/fish/.dbt
+[0m15:25:17.024880 [info ] [MainThread]: Using profiles.yml file at /Users/fish/.dbt/profiles.yml
+[0m15:25:17.025469 [info ] [MainThread]: Using dbt_project.yml file at /Users/fish/crm-sales-analytics/dbt_sales_analytics/dbt_project.yml
+[0m15:25:17.270558 [info ] [MainThread]: Configuration:
+[0m15:25:17.271215 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m15:25:17.271686 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m15:25:17.272146 [info ] [MainThread]: Required dependencies:
+[0m15:25:17.272760 [debug] [MainThread]: Executing "git --help"
+[0m15:25:17.287720 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c name=value]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   reset      Reset current HEAD to the specified state\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   branch     List, create, or delete branches\n   checkout   Switch branches or restore working tree files\n   commit     Record changes to the repository\n   diff       Show changes between commits, commit and working tree, etc\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\n""
+[0m15:25:17.289464 [debug] [MainThread]: STDERR: "b''"
+[0m15:25:17.290022 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:25:17.290560 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m15:25:17.291097 [info ] [MainThread]: [31m1 check failed:[0m
+[0m15:25:17.291574 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Could not find profile named 'dbt_sales_analytics'
+
+
+[0m15:25:17.292421 [info ] [MainThread]: Your new dbt project "dbt_sales_analytics" was created!
+Initialized new project in /Users/fish/crm-sales-analytics/dbt_sales_analytics/dbt_sales_analytics
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:25:17.292997 [info ] [MainThread]: [31mYour profile may need adjustments. You can find the logs of `dbt debug` above[0m
+[0m15:25:17.602801 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 27.185469, "process_in_blocks": "0", "process_kernel_time": 0.644862, "process_mem_max_rss": "122802176", "process_out_blocks": "0", "process_user_time": 3.196899}
+[0m15:25:17.603892 [debug] [MainThread]: Command `dbt init` succeeded at 15:25:17.603702 after 27.19 seconds
+[0m15:25:17.604654 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c95f30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108047d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108017350>]}
+[0m15:25:17.605424 [debug] [MainThread]: Flushing usage events
+[0m15:25:18.476254 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:25:30.485333 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1113fdd30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112caa710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112caa990>]}
+
+
+============================== 15:25:30.496050 | 4a634fd9-8086-4589-9c71-2174ae7b46d4 ==============================
+[0m15:25:30.496050 [info ] [MainThread]: Running with dbt=1.12.6
+[0m15:25:30.497103 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'warn_error': 'None', 'log_cache_events': 'False', 'use_colors': 'True', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'hints_enabled': 'True', 'fail_fast': 'False', 'cache_selected_only': 'False', 'introspect': 'True', 'target_path': 'None', 'debug': 'False', 'invocation_command': 'dbt debug', 'partial_parse': 'True', 'empty': 'None', 'log_path': 'logs', 'log_format': 'default', 'version_check': 'True', 'printer_width': '80', 'indirect_selection': 'eager', 'profiles_dir': '/Users/fish/.dbt', 'maximum_seed_size_mib': '1'}
+[0m15:25:30.544003 [info ] [MainThread]: dbt version: 1.12.6
+[0m15:25:30.544624 [info ] [MainThread]: python version: 3.14.8
+[0m15:25:30.545087 [info ] [MainThread]: python path: /Users/fish/crm-sales-analytics/venv/bin/python3.14
+[0m15:25:30.545535 [info ] [MainThread]: os info: macOS-15.7.9-x86_64-i386-64bit-Mach-O
+[0m15:25:30.560531 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m15:25:30.561543 [info ] [MainThread]: Using profiles dir at /Users/fish/.dbt
+[0m15:25:30.562162 [info ] [MainThread]: Using profiles.yml file at /Users/fish/.dbt/profiles.yml
+[0m15:25:30.562683 [info ] [MainThread]: Using dbt_project.yml file at /Users/fish/crm-sales-analytics/dbt_project.yml
+[0m15:25:30.563330 [info ] [MainThread]: Configuration:
+[0m15:25:30.570564 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m15:25:30.571456 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m15:25:30.573680 [info ] [MainThread]: Required dependencies:
+[0m15:25:30.574964 [debug] [MainThread]: Executing "git --help"
+[0m15:25:30.607632 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c name=value]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   reset      Reset current HEAD to the specified state\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   branch     List, create, or delete branches\n   checkout   Switch branches or restore working tree files\n   commit     Record changes to the repository\n   diff       Show changes between commits, commit and working tree, etc\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\n""
+[0m15:25:30.609471 [debug] [MainThread]: STDERR: "b''"
+[0m15:25:30.610632 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:25:30.611336 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m15:25:30.612336 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m15:25:30.613380 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "aml_dbt", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+
+[0m15:25:30.614065 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/fish/crm-sales-analytics/dbt_project.yml> not found
+
+[0m15:25:30.620366 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.37800977, "process_in_blocks": "0", "process_kernel_time": 0.563998, "process_mem_max_rss": "119459840", "process_out_blocks": "0", "process_user_time": 2.897012}
+[0m15:25:30.621431 [debug] [MainThread]: Command `dbt debug` failed at 15:25:30.621226 after 0.38 seconds
+[0m15:25:30.622236 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112da5810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112df05f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112dcd590>]}
+[0m15:25:30.623006 [debug] [MainThread]: Flushing usage events
+[0m15:25:31.279293 [debug] [MainThread]: An error was encountered while trying to flush usage events
