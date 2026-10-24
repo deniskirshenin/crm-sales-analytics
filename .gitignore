@@ -1,0 +1,16 @@
+# Python / Virtual Environment
+venv/
+__pycache__/
+*.py[cod]
+.env
+
+# dbt specific
+dbt_sales_analytics/target/
+dbt_sales_analytics/dbt_packages/
+logs/
+dbt_sales_analytics/logs/
+
+# IDE / OS specific
+.vscode/
+.DS_Store
+*.swp

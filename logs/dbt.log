@@ -93,3 +93,19 @@ Runtime Error
 [0m15:25:30.622236 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112da5810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112df05f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112dcd590>]}
 [0m15:25:30.623006 [debug] [MainThread]: Flushing usage events
 [0m15:25:31.279293 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:40:47.641952 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a481d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bd92850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bd92ad0>]}
+
+
+============================== 14:40:47.655659 | d8e9bae5-065d-4d59-909f-aa5307a8f306 ==============================
+[0m14:40:47.655659 [info ] [MainThread]: Running with dbt=1.12.6
+[0m14:40:47.656785 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'debug': 'False', 'no_print': 'None', 'introspect': 'True', 'quiet': 'False', 'cache_selected_only': 'False', 'version_check': 'True', 'log_cache_events': 'False', 'log_path': 'logs', 'use_experimental_parser': 'False', 'printer_width': '80', 'empty': 'False', 'hints_enabled': 'True', 'static_parser': 'True', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'profiles_dir': '/Users/fish/.dbt', 'warn_error': 'None', 'indirect_selection': 'eager', 'maximum_seed_size_mib': '1', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'write_json': 'True', 'target_path': 'None', 'invocation_command': 'dbt run --select fct_deals'}
+[0m14:40:47.657787 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/fish/crm-sales-analytics/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:40:47.936344 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.4492182, "process_in_blocks": "0", "process_kernel_time": 0.657925, "process_mem_max_rss": "118882304", "process_out_blocks": "0", "process_user_time": 2.450973}
+[0m14:40:47.937546 [debug] [MainThread]: Command `dbt run` failed at 14:40:47.937303 after 0.45 seconds
+[0m14:40:47.938313 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bb83bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bd32690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bdc2cf0>]}
+[0m14:40:47.938923 [debug] [MainThread]: Flushing usage events
+[0m14:40:48.726612 [debug] [MainThread]: An error was encountered while trying to flush usage events
