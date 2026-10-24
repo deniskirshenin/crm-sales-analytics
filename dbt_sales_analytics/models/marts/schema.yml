@@ -1,0 +1,41 @@
+version: 2
+
+models:
+  - name: fct_deals
+    description: "Table containing information about deals, including deal IDs, stages, and associated accounts, products, and sales agents. It is used to analyze deal performance and support sales and marketing strategies."  
+    columns:
+      - name: deal_id
+        description: "Unique identifier for each deal"
+        tests:
+          - unique
+          - not_null
+      - name: deal_stage
+        description: "Current stage of the deal"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Prospecting', 'Engaging', 'Won', 'Lost']
+
+  - name: dim_products
+    description: "Table containing information about the products offered by the company, including product names, series, and sales prices. It is used to analyze product performance and support sales and marketing strategies."
+    columns:
+      - name: product
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_sales_teams
+    description: "Table containing information about the sales teams within the company, including sales agents, their managers, and regional offices. It is used to analyze team performance and support sales and marketing strategies."
+    columns:
+      - name: sales_agent
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_accounts
+    description: "Table containing information about the accounts within the company. It is used to analyze account performance and support sales and marketing strategies."
+    columns:
+      - name: account
+        tests:
+          - unique
+          - not_null
