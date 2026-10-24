@@ -6,3 +6,9 @@ sources:
     tables:
       - name: sales_pipeline
         description: "This table contains information about the sales pipeline, including details about leads, opportunities, and their respective stages. It is used to track the progress of potential sales and forecast future revenue."
+      - name: accounts
+        description: "This table contains information about the accounts associated with the company, including account names, sectors, and locations. It is used to analyze account performance and support sales and marketing strategies."
+      - name: products
+        description: "This table contains information about the products offered by the company, including product names, series, and sales prices. It is used to analyze product performance and support sales and marketing strategies."
+      - name: sales_teams
+        description: "This table contains information about the sales teams within the company, including sales agents, their managers, and regional offices. It is used to analyze team performance and support sales and marketing strategies."
