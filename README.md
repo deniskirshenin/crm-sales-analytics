@@ -71,3 +71,13 @@ dbt test
 ## 📸 Dashboard Preview
 
 ![https://96f9aaee.us2a.app.preset.io/superset/dashboard/8/?native_filters_key=s-iawEgpS8YgTdPX4UrgfQ](./dashboard_preview.png)
+
+---
+
+## 🔗 Live Interactive Dashboard
+
+* **Apache Superset Dashboard:** [View Live Sales Analytics Dashboard]([https://96f9aaee.us2a.app.preset.io/superset/dashboard/8/?native_filters_key=s-iawEgpS8YgTdPX4UrgfQ])
+
+*(Note: Requires guest access or demo credentials: `login: guest` / `password: guest`)*
+
+---
